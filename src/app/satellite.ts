@@ -10,6 +10,15 @@ export class Satellite {
         this.type = type;
         this.launchDate = launchDate;
         this.orbitType = orbitType;
-        this.operational = operational;
+        this.operational = operational;        
     }
+
+    shouldShowWarning(): Boolean {
+        if (this.type.toLowerCase() === "space debris") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
