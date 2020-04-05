@@ -28,7 +28,7 @@ export class OrbitCountsComponent implements OnInit {
         typeCount += 1;
       }
     }
-    return typeCount
+    return typeCount;
   }
 
 }
